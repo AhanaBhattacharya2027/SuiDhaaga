@@ -14,7 +14,7 @@ const OWNER_USERNAME = process.env.OWNER_ID;
 const OWNER_PASSWORD = process.env.OWNER_PASSWORD;
 const { storage } = require('./cloudinary'); // adjust path as needed
 const upload = multer({ storage });
-mongoose.connect("mongodb://localhost:27017/Silaai")
+mongoose.connect("process.env.MONGO_URI")
 .then(()=>{
     console.log("Connected to mongoDB successfully");
 })
