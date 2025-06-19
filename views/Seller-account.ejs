@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Seller-account.css">
+</head>
+<body>
+    <div class="outerContainer">
+        <h1 class="name"><%= existingUser.name %></h1>
+        <h3 class="name">@<%= existingUser.sellerid %></h3>
+        <h3 class="name">Phone no :  <%= existingUser.contactno %></h3>
+        <br><br>
+        <form action='/upload-a-fabric' method='get'>
+            <button class="upload">Upload a fabric</button>
+        </form>
+        <br>
+        <form action='/see-orders/<%= existingUser.sellerid%>' method='get'>
+            <button class="upload">See Latest orders</button>
+        </form>
+
+        <br><br>
+
+        <%for(let fab of fabricCards){%>
+            <div class="card">
+                <h1 class="title"><%=fab.title%></h1>
+                <br>
+                <div class="inner">
+                    <img src="<%=fab.images%>" alt="" class="fabricImage">
+                    <div class="desc"><h3><%= fab.description%></h3>
+                        <br><br>
+                        <h1><%= fab.pricepermeter%>/- per meter</h1>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        <%}%>
+    </div>    
+</body>
+</html>

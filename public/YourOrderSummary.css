@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fefefe;
+    padding: 2rem;
+    color: #333;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    border: 1px solid #ddd;
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.section {
+    margin-bottom: 2rem;
+}
+.image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+.go{
+    height: 2rem;
+    width: 10rem;
+    background-color: rgb(208, 184, 7);
+    color: maroon;
+    border: none;    
+}

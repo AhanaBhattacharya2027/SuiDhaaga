@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Received-Orders.css">
+</head>
+<body>
+    <div class="outerContainer">
+    <%for(let order of orders){%>
+            <div class="card">
+                <h1 class="title">Customer's number : <%=order.contactnumber%></h1>
+                <br>
+                <div class="inner">
+                    <img src="<%=order.fabricImage%>" alt="" class="fabricImage">
+                    <div class="desc">
+                        <br><br>
+                        <h1><%= order.quantity%>meter</h1>
+                        <br><br>
+                        <h1>Customer address : <%=order.address%></h1>
+                        <h1>Customer contactNumber : <%=order.contactnumber%></h1>
+                        <h1>Tailor's address : <%=order.addressTailor%></h1>
+                        <h1>Tailor'Contact Number : <%=order.contactnumberTailor%> </h1>
+                    </div>
+                </div>
+            </div>
+        <%}%>  
+    </div>  
+</body>
+</html>

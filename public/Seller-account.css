@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+}
+.outerContainer{
+    height: auto;
+    width:100%;
+    background-color: brown;
+    padding: 3rem;
+}
+.name{
+    color: white;
+}
+.upload{
+    height: 3rem;
+    width: 10rem;
+    border: none;
+    color: brown;
+    background-color: rgba(237, 179, 6, 0.983);
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15%;
+}
+.upload:hover{
+    background-color: black;
+    color: white;
+}
+.card{
+    width: 50rem;
+    border: 2px solid white;
+    padding:2rem;
+    margin-top: 2rem;
+}
+.title{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fabricImage{
+    height: 15rem;
+    width: 15rem;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    height: 15rem;
+    width: 30rem;
+    color: white;
+}
+.buy{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 15%;
+    border: brown;
+    color: brown;
+    font-weight: bold;
+}
+.buy:hover{
+    background-color: black;
+    color: white;
+}

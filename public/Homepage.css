@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.navbar{
+    padding: 2rem 2rem 2rem 2rem;
+    height: auto;
+    width: 100%;
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    color: white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tabs{
+    padding: 0.5rem;
+}
+.tab{
+    text-decoration: none;
+    color: white;
+    font-weight: Bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
+    margin: 1rem;
+    
+}
+.tab:hover{
+    text-decoration: underline;
+}
+.hero_image{
+    float: right;
+    
+}
+.tag1{
+    padding-top: 7rem;
+    padding-left: 7rem;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: brown;
+}
+#second{
+    font-family:'Times New Roman', Times, serif
+}
+.join1{
+    height: 3rem;
+    width: 20rem;
+    margin-left: 16rem;
+    border-radius: 30%;
+    background-color: brown;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+.join1:hover{
+    background-color: rgba(243, 183, 5, 0.995);
+    color: brown;
+
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    background-color: brown;
+    padding: 2rem;
+}
+.heading{
+    text-align: center;
+    color: white;
+}
+.about_us{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.box1{
+    text-align: center;
+    color: white;
+    width: 20rem;
+}
+.tag3{
+    text-align: center;
+    color: white;
+}
+.materials{
+    padding-top: 4rem;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+}
+.button{
+    height: 25rem;
+    width: 20rem;
+    padding: 2rem;
+    background-color: white;
+    border: none;
+    color: brown;
+}
+.button:hover{
+    background-color: rgba(243, 183, 5, 0.995);
+}
+.buttonimage{
+    height: 15rem;
+}
+.fabricButton{
+    background-color: brown;
+    padding-left: 35rem;
+
+}
+.fabBut{
+    height: 3rem;
+    width:20rem;
+    border-radius: 30%;
+    color: brown;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: rgba(243, 183, 5, 0.995);
+
+}
+.fabBut:hover{
+    background-color: white;
+    
+}
+.bg{
+    background-color: brown;
+}

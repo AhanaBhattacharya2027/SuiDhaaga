@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Orders.css">
+</head>
+<body>
+    <div class="outerContainer">
+        <h1 class="heading">My received Orders : </h1>
+    <%for(let or of orders){%>
+            <div class="card">
+                <h1 class="title"><%=or.fabricId%></h1>
+                <br>
+                <h3><%=or.quantity%> meters</h3>
+                <img src="<%=or.fabricImage%>" alt="" class="image">
+            </div>
+        <%}%>  
+    </div>    
+</body>
+</html>

@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.heading{
+    margin-left: 23rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+.outerContainer{
+    height: 60vh;
+    width: 100%;
+    background-color: brown;
+    padding:8rem;
+}
+.innerContainer{
+    height: 30vh;  
+    width: 67rem;  
+    background-color: white;
+    padding: 4rem 4rem 4rem 4rem;
+    
+}
+.Name{
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.sellerid{
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.password{
+    height: 3rem;
+    width: 18rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.contactno{
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+
+}
+.brandname{
+    height: 3rem;
+    width: 20rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.city{
+    height: 3rem;
+    width: 18rem;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+}
+.submit{
+    height: 2rem;
+    width: 10rem;
+    margin-left: 25rem;
+    background-color: brown;
+    color: white;
+}
+.submit:hover{
+    background-color: black;
+    box-shadow: 1px 1px 1px brown;
+}
+.link{
+    margin-left: 23rem;
+}

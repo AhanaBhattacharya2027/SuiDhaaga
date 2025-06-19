@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Designs.css">
+</head>
+<body>
+    <div class="outerContainer">
+    <%for(let des of designs){%>
+            <div class="card">
+                <h1 class="title"><%=des.title%></h1>
+                <br>
+                <div class="inner">
+                    <img src="<%=des.images[0]%>" alt="" class="fabricImage">
+                    <div class="desc"><h3><%= des.description%></h3>
+                        <br><br>
+                        <h1>Making charges : <%= des.makingCharges%>/-</h1>
+                        <br><br>
+                        <form action="/Tailor-design-selected/<%= des.designId%>" method="post">
+                            <input type="number" placeholder="Quantity of clothes (in meteres)" class="input" name="quantity">
+                            <br>
+                            <input type="text" placeholder="Address" class="input" name="address">
+                            <br>
+                            <input type="text" placeholder="Contact Number" name="contactnumber">
+                            <button class="button">Create this design</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <%}%>  
+        </div>  
+</body>
+</html>

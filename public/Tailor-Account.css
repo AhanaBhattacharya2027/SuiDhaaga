@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.outerContainer{
+    height: auto;
+    width: 100%;
+    padding: 3rem;
+    background-color: brown;
+}
+.name,.tailorID{
+    color: white;
+}
+.button{
+    height: 2rem;
+    width: 10rem;
+    border-radius: 10%;
+    background-color: rgb(204, 185, 15);
+    color: brown;
+    border: 2px solid brown;
+    font-weight: bold;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+.card1{
+    width: 50rem;
+    border: 2px solid white;
+    padding:2rem;
+    margin-top: 2rem;
+}
+.title1{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fabricImage1{
+    height: 15rem;
+    width: 13rem;
+}
+.inner1{
+    display: flex;
+    justify-content: space-between;
+}
+.desc1{
+    height: 15rem;
+    width: 30rem;
+    color: white;
+}

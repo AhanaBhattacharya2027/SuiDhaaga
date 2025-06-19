@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: brown;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+    width: 350px;
+}
+
+.tailor-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.tailor-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.tailor-form input[type="file"] {
+    padding: 6px;
+    background-color: #f5f5f5;
+}
+
+.tailor-form label {
+    display: block;
+    margin-top: 12px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+.tailor-form input:hover,
+.tailor-form input:focus {
+    border-color: brown;
+    background-color: #FFEBEE;
+    outline: none;
+}
+
+.tailor-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.tailor-form button:hover {
+    background-color:brown;
+}

@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.heading{
+    color: white;
+}
+.outerContainer{
+    background-color: brown;
+    padding: 3rem;
+    color: white;
+}
+.card{
+    width:50rem;
+    border: 2px solid white;
+    height: auto;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.button{
+    height: 2rem;
+    width: 10rem;
+    background-color: rgb(225, 178, 7);
+    color: brown;
+    border-radius: 10%;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+}

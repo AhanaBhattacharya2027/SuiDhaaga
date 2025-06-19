@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.heading{
+    color: white;
+}
+.outerContainer{
+    background-color: brown;
+    padding: 3rem;
+    color: white;
+}
+.card{
+    width:50rem;
+    border: 2px solid white;
+    height: auto;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+.image{
+    height: 15rem;
+    width: 13rem;
+}

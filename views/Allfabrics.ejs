@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Allfabrics.css">
+</head>
+<body>
+    <div class="outerContainer">
+    <%for(let fab of allFabrics){%>
+            <div class="card">
+                <h1 class="title"><%=fab.title%></h1>
+                <br>
+                <div class="inner">
+                    <img src="<%=fab.images%>" alt="" class="fabricImage">
+                    <div class="desc"><h3><%= fab.description%></h3>
+                        <br><br>
+                        <h1><%= fab.pricepermeter%>/- per meter</h1>
+                        <br><br>
+                        <form action="/Fabric-selected/<%=fab.fabricId%>" method="get">
+                            <button class="buy">Choose Fabric</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        <%}%>  
+    </div>  
+</body>
+</html>

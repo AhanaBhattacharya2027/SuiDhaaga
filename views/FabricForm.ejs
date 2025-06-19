@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/FabricForm.css">
+
+</head>
+<body>
+    <div class="form-container">
+        <form class="product-form" enctype="multipart/form-data" action="/fabric-uploaded-to-your-account" method="post">
+            <h2>Upload Your Fabric</h2>
+            <input type="text" name="fabricId" placeholder="Enter your Fabric_Id" required>
+            <input type="text" name="title" placeholder="Title" required>
+            <input type="text" name="description" placeholder="Description" required>
+            <input type="text" name="material" placeholder="Material" required>
+            <input type="number" name="pricepermeter" placeholder="Price per meter" step="0.01" required>
+
+           <label for="image">Upload Fabric Image (PNG, JPG, JPEG)</label>
+           <input type="file" id="image" name="images" multiple accept="image/png, image/jpeg, image/jpg" >
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    
+</body>
+</html>

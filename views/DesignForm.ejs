@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Upload Form</title>
+  <link rel="stylesheet" href="/DesignForm.css">
+</head>
+<body>
+  <div class="form-container">
+    <form class="tailor-form" enctype="multipart/form-data" action="/design-added-to-your-account" method="post">
+      <h2>Upload Your Designs</h2>
+      <input type="text" name="designId" placeholder="DesignId" required>
+      <input type="text" name="title" placeholder="Title of Design" required>
+      <input type="text" name="description" placeholder="Short Description" required>
+      <input type="number" name="makingCharges" placeholder="Making Charges (in ₹)" required>
+
+      <label for="design_image">Upload Design Images (PNG, JPG, JPEG)</label>
+      <input type="file" id="design_image" name="images" accept="image/jpg, image/png, image/jpeg" multiple required>
+
+      <button type="submit">Upload</button>
+    </form>
+  </div>
+</body>
+</html>

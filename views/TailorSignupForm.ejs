@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tailor Registration Form</title>
+  <link rel="stylesheet" href="/TailorSignupForm.css">
+</head>
+<body>
+  <div class="form-container">
+    <form class="tailor-form" action="/joined-as-a-tailor" method="post">
+      <h2>Register as a Tailor</h2>
+
+      <input type="text" name="fullname" placeholder="Full Name" required>
+      <input type="text" name="tailorId" placeholder="Tailor ID (Unique)" required>
+      <input type="tel" name="contactno" placeholder="Contact Number" required pattern="[0-9]{10}" title="Enter a valid 10-digit phone number">
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="text" name="address" placeholder="Address" required>
+      <input type="text" name="area" placeholder="Area" >
+
+      <button type="submit">Register</button>
+    </form>
+    <br>
+    <a href="/login-as-tailor">Already have a account? Sign in</a>
+  </div>
+</body>
+</html>

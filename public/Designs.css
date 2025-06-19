@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.outerContainer{
+    width: 100%;
+    height: auto;
+    background-color: brown;
+    padding:2rem;
+}
+.card{
+    width: 50rem;
+    border: 2px solid white;
+    padding:2rem;
+    margin-top: 2rem;
+}
+.title{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.fabricImage{
+    height: 15rem;
+    width: 13rem;
+}
+.inner{
+    display: flex;
+    justify-content: space-between;
+}
+.desc{
+    height: 15rem;
+    width: 30rem;
+    color: white;
+}
+.button{
+    height: 2rem;
+    width: 10rem;
+    background-color: rgb(225, 178, 7);
+    color: brown;
+    border-radius: 10%;
+    border: none;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+.input{
+    height: 2rem;
+    width: 10rem;
+}
