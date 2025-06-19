@@ -65,7 +65,7 @@ app.get('/seller-account/:id', async (req,res)=>{
     if(existingUser)
     {
         const fabricCards=await Fabric.find({sellerid:sellerid});
-        return res.render('Seller-Account.ejs',{existingUser,fabricCards});
+        return res.render('Seller-account.ejs',{existingUser,fabricCards});
     }
     else
     {
