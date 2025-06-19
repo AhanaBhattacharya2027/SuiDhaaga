@@ -1,15 +1,15 @@
 *{
     margin: 0;
     padding: 0;
-    
 }
 .navbar{
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem;
     height: auto;
     width: 100%;
     background-color: brown;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 .logo{
     color: white;
@@ -21,18 +21,18 @@
 .tab{
     text-decoration: none;
     color: white;
-    font-weight: Bold;
+    font-weight: bold;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1rem;
     margin: 1rem;
-    
 }
 .tab:hover{
     text-decoration: underline;
 }
 .hero_image{
     float: right;
-    
+    max-width: 100%;
+    height: auto;
 }
 .tag1{
     padding-top: 7rem;
@@ -42,7 +42,7 @@
     color: brown;
 }
 #second{
-    font-family:'Times New Roman', Times, serif
+    font-family:'Times New Roman', Times, serif;
 }
 .join1{
     height: 3rem;
@@ -57,7 +57,6 @@
 .join1:hover{
     background-color: rgba(243, 183, 5, 0.995);
     color: brown;
-
 }
 .about{
     height: 100vh;
@@ -75,7 +74,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-
+    flex-wrap: wrap;
 }
 .box1{
     text-align: center;
@@ -93,6 +92,7 @@
     display: flex;
     justify-content: space-around;
     background-color: brown;
+    flex-wrap: wrap;
 }
 .button{
     height: 25rem;
@@ -101,33 +101,80 @@
     background-color: white;
     border: none;
     color: brown;
+    margin: 1rem;
 }
 .button:hover{
     background-color: rgba(243, 183, 5, 0.995);
 }
 .buttonimage{
     height: 15rem;
+    width: 100%;
+    object-fit: cover;
 }
 .fabricButton{
     background-color: brown;
     padding-left: 35rem;
-
+    text-align: center;
 }
 .fabBut{
     height: 3rem;
-    width:20rem;
+    width: 20rem;
     border-radius: 30%;
     color: brown;
     font-size: 1rem;
     font-weight: bold;
     border: none;
     background-color: rgba(243, 183, 5, 0.995);
-
 }
 .fabBut:hover{
     background-color: white;
-    
 }
 .bg{
     background-color: brown;
+}
+
+/* ✅ Add responsive styles for smaller screens */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tab {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .tag1 {
+        padding-top: 3rem;
+        padding-left: 1rem;
+        font-size: 1.2rem;
+    }
+
+    .join1 {
+        margin: 2rem auto;
+        width: 80%;
+        display: block;
+    }
+
+    .about_us {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .materials {
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .fabricButton {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .fabBut {
+        width: 80%;
+    }
 }
