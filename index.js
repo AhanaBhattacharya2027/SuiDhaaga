@@ -14,13 +14,12 @@ const OWNER_USERNAME = process.env.OWNER_ID;
 const OWNER_PASSWORD = process.env.OWNER_PASSWORD;
 const { storage } = require('./cloudinary'); // adjust path as needed
 const upload = multer({ storage });
-mongoose.connect("process.env.MONGO_URI")
-.then(()=>{
-    console.log("Connected to mongoDB successfully");
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
 })
-.catch((err)=>{
-    console.log("Error with mongoDB connection");
-})
+.then(() => console.log("✅ MongoDB connected"))
+.catch((err) => console.error("❌ MongoDB connection error:", err));
 app.use(session({
     secret: process.env.SESSION_SECRET,
     resave: false,
