@@ -12,10 +12,8 @@
     <%for(let tailor of Tailors){%>
             <div class="card">
                 <h1 class="title"><%=tailor.fullname%></h1>
-                <br>
                 <h3>@<%= tailor.tailorId%></h3>
                 <h2><%= tailor.address%></h2>
-                <br>
                 <form action="/Tailor-designs/<%=tailor.tailorId%>" method="get">
                     <button class="button">Explore creations</button>
                 </form>

@@ -1,80 +1,62 @@
 *{
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
-}
-.heading{
-    margin-left: 23rem;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    box-sizing: border-box;
 }
 .outerContainer{
-    height: 60vh;
-    width: 100%;
     background-color: brown;
-    padding:8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 3rem 3rem 3rem;
 }
 .innerContainer{
-    height: 30vh;  
-    width: 67rem;  
-    background-color: white;
-    padding: 4rem 4rem 4rem 4rem;
     
+    width: 50rem;
+    background-color: white;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fill{
+    text-align: center;
+    color: brown;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.form{
+    padding: 2rem;
+    margin-top: 2rem;
+    width: 40rem;
+    border: 2px solid black;
 }
 .Name{
-    height: 3rem;
+    height: 2rem;
     width: 20rem;
+    margin-top: 2rem;
     text-align: center;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.5rem;
-    margin-right: 1.5rem;
 }
-.sellerid{
-    height: 3rem;
-    width: 20rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
-}
-.password{
-    height: 3rem;
-    width: 18rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
-}
-.contactno{
-    height: 3rem;
-    width: 20rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
+.form1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-}
-.brandname{
-    height: 3rem;
-    width: 20rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
-}
-.city{
-    height: 3rem;
-    width: 18rem;
-    text-align: center;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
 }
 .submit{
     height: 2rem;
-    width: 10rem;
-    margin-left: 25rem;
+    width: 20rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
     background-color: brown;
     color: white;
+    border: none;
 }
 .submit:hover{
     background-color: black;
-    box-shadow: 1px 1px 1px brown;
-}
-.link{
-    margin-left: 23rem;
+    color: white;
 }

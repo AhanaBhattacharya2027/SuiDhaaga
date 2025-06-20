@@ -27,7 +27,8 @@
     color: white;
 }
 .card{
-    width: 50rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
     border: 2px solid white;
     padding:2rem;
     margin-top: 2rem;
